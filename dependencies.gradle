@@ -8,11 +8,31 @@ allprojects {
 }
 
 ext {
+    //Kotlin
+    kotlinVersion = '1.2.30'
+
+    //Libraries
+    androidSupportVersion = '27.1.0'
     daggerVersion = '2.15'
     retrofitVersion = '2.4.0'
+
+    //Rx
     rxAndroid2Version = '2.0.1'
     rxJava2Version = '2.1.10'
     rxBinding2Version = '2.1.1'
+
+    kotlinDependencies = [
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
+    ]
+
+    androidSupportDependencies = [
+            appCompat    : "com.android.support:appcompat-v7:${androidSupportVersion}",
+            support4     : "com.android.support:support-v4:${androidSupportVersion}",
+            support13    : "com.android.support:support-v13:${androidSupportVersion}",
+            cardView     : "com.android.support:cardview-v7:${androidSupportVersion}",
+            supportDesign: "com.android.support:design:${androidSupportVersion}",
+            recyclerView : "com.android.support:recyclerview-v7:${androidSupportVersion}"
+    ]
 
     daggerDependencies = [
             dagger         : "com.google.dagger:dagger:${daggerVersion}",
