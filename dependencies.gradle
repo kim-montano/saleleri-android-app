@@ -1,0 +1,36 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+    daggerVersion = '2.15'
+    retrofitVersion = '2.4.0'
+    rxAndroid2Version = '2.0.1'
+    rxJava2Version = '2.1.10'
+    rxBinding2Version = '2.1.1'
+
+    daggerDependencies = [
+            dagger         : "com.google.dagger:dagger:${daggerVersion}",
+            daggerSupport  : "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggerCompiler : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            daggerProcessor: "com.google.dagger:dagger-android-processor:${daggerVersion}",
+    ]
+
+    retroFitDependencies = [
+            retrofit             : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitAdapter      : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            retrofitGsonConverter: "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    ]
+
+    rxDependencies = [
+            rxJava2          : "io.reactivex.rxjava2:rxjava:${rxJava2Version}",
+            rxAndroid2       : "io.reactivex.rxjava2:rxandroid:${rxAndroid2Version}",
+            rxBinding2       : "com.jakewharton.rxbinding2:rxbinding:${rxBinding2Version}",
+            rxBinding2Support: "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBinding2Version}"
+    ]
+}
