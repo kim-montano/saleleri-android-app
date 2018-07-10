@@ -1,4 +1,4 @@
-package com.example.jumpyjump.domain.store.location;
+package com.example.jumpyjump.domain.post.location;
 
 public class Location {
     private long longitude;

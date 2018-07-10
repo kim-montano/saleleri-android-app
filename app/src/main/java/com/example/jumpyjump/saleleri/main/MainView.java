@@ -1,9 +1,11 @@
 package com.example.jumpyjump.saleleri.main;
 
-public interface MainView {
+import com.example.jumpyjump.saleleri.common.base.BaseView;
+
+public interface MainView extends BaseView {
     void showFeed();
 
-    void showFeed(int page);
+    void showNextFeed(int page);
 
     void showError();
 

@@ -1,4 +1,4 @@
-package com.example.jumpyjump.domain.store.offereditem;
+package com.example.jumpyjump.domain.post.offereditem;
 
 public class OfferedItem {
     private String name;
